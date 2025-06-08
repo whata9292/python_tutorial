@@ -1,0 +1,68 @@
+{
+  "quiz_settings": {
+    "pass_score": 70,
+    "max_retries": 3,
+    "cooling_period_minutes": 60,
+    "hint_penalty": {
+      "level_1": 0,
+      "level_2": 10,
+      "level_3": 25
+    }
+  },
+  "question_types": {
+    "multiple_choice": {
+      "points": 10,
+      "description": "選択肢から正解を選ぶ"
+    },
+    "fill_blank": {
+      "points": 15,
+      "description": "コードの空欄を埋める"
+    },
+    "debug": {
+      "points": 20,
+      "description": "エラーを修正する"
+    },
+    "predict_output": {
+      "points": 15,
+      "description": "実行結果を予測する"
+    },
+    "implementation": {
+      "points": 30,
+      "description": "要件に従って実装する"
+    }
+  },
+  "quiz_structure": {
+    "basics": {
+      "01": {
+        "title": "インタープリター基礎",
+        "questions": 6,
+        "total_points": 100
+      },
+      "02": {
+        "title": "数値と文字列",
+        "questions": 7,
+        "total_points": 100
+      },
+      "03": {
+        "title": "リストとシーケンス",
+        "questions": 8,
+        "total_points": 100
+      }
+    },
+    "projects": {
+      "01": {
+        "title": "数当てゲーム",
+        "questions": 5,
+        "total_points": 100
+      }
+    }
+  },
+  "messages": {
+    "welcome": "🧪 理解度テストを開始します",
+    "pass": "✅ 合格おめでとうございます！",
+    "fail": "📚 もう少し復習が必要です",
+    "retry_available": "💪 あと{remaining}回挑戦できます",
+    "retry_exhausted": "⏰ 1時間後に再挑戦できます",
+    "hint_used": "💡 ヒント使用 (-{penalty}点)"
+  }
+}
